@@ -176,7 +176,7 @@ if os.path.exists(fig_dir):
     images = [f for f in os.listdir(fig_dir) if f.endswith(".png")]
     for i, img in enumerate(sorted(images)):
         with fig_cols[i % 3]:
-            st.image(os.path.join(fig_dir, img), caption=img, use_column_width=True)
+            st.image(os.path.join(fig_dir, img), caption=img, use_container_width=True)
 
 # Data Source Reference
 st.markdown("---")
