@@ -1,14 +1,11 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import joblib
 import yaml
 import os
-from typing import Dict
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc
 from src.generate_features import generate_features
-from src.score_model import score_model
 
 st.set_page_config(layout="wide")
 
